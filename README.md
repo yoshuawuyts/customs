@@ -5,7 +5,9 @@ Type validator for node.js and the browser.
 ## Installation
 With [node](nodejs.org) installed:
 
-`npm -i --save customs`
+````
+npm -i --save customs
+````
 
 ## Usage
 ````js
