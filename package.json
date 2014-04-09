@@ -1,6 +1,6 @@
 {
   "name": "customs",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "description": "Type validator",
   "main": "index.js",
   "scripts": {
