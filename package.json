@@ -1,0 +1,27 @@
+{
+  "name": "customs",
+  "version": "0.0.0",
+  "description": "Type validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoshuawuyts/customs.git"
+  },
+  "keywords": [
+    "type",
+    "validation"
+  ],
+  "author": "Yoshua Wuyts <i@yoshuawuyts.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoshuawuyts/customs/issues"
+  },
+  "homepage": "https://github.com/yoshuawuyts/customs",
+  "devDependencies": {
+    "should": "^3.3.0",
+    "mocha": "^1.18.2"
+  }
+}
