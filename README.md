@@ -1,5 +1,7 @@
 # customs
 
+[![Build Status](https://travis-ci.org/yoshuawuyts/customs.svg)](https://travis-ci.org/yoshuawuyts/customs)
+
 Type validator for node.js and the browser.
 
 ## Installation
