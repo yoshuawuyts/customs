@@ -7,7 +7,11 @@
 module.exports = exports = customs;
 
 /**
- * Init custom
+ * Init 'customs'
+ *
+ *  customs('string', 'hi', function(err) {
+ *    // handle error if any
+ *  });
  *
  * @params {String} type
  * @params {any} target
@@ -15,57 +19,62 @@ module.exports = exports = customs;
  * @api public
  */
 
-function customs (type, target, next) {
+function customs (type, target, err) {
   switch (type) {
 
     case 'array':
       if (Object.prototype.toString.call(target) == '[object Array]'){
-        next = true;
+        err = true;
         return true;
       }
-      next = false;
       return false;
       break;
 
     case 'string':
       if ('string' == typeof(target)) {
-        next = true;
+        err = true;
         return true;
       }
-      next = false;
       return false;
       break;
 
     case 'number':
       if ('number' == typeof(target)) {
-        next = true;
+        err = true;
         return true
       };
-      next = false;
       return false;
       break;
 
     case 'boolean':
       if ('boolean' == typeof(target)) {
-        next = true;
+        err = true;
         return true;
       }
-      next = false;
       return false;
       break;
 
     case 'object':
       if ('object' == typeof(target)) {
-        next = true;
+        err = true;
         return true;
       }
-      next = false;
       return false;
       break;
 
-    // TODO: default to regexp check
+    case 'email':
+      var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if (regex.test(target)) {
+        err = true;
+        return true;
+      }
+
     default:
-      next = false;
+      // check and evaluate regex
+      if (type instanceof RegExp && type.test(target)) {
+        err = true;
+        return true;
+      }
       return false;
   }
 }
