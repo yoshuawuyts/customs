@@ -16,14 +16,18 @@ npm -i --save customs
 var customs = require('customs');
 
 customs('string', 'Dad jokes', function(err) {
-  // -> err is 'true'
+  // nothing do do here, no err.
 });
 
 var returnValue = customs('string', 1337);
 // -> returnValue is 'false'
 
 var customs(/d(b+)d/g, 'cdbbdbsbz', function(err) {
-  // -> err is 'false'
+  // nothing to do here, no err.
+});
+
+var customs(/d(b+)d/g, 'this is an error', function(err) {
+  // handle err.
 });
 ````
 
