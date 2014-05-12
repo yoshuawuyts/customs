@@ -1,7 +1,7 @@
 # customs
 
 [![Build Status](https://travis-ci.org/yoshuawuyts/customs.svg)](https://travis-ci.org/yoshuawuyts/customs)
-[![Coverage Status](https://img.shields.io/coveralls/yoshuawuyts/customs.svg)](https://coveralls.io/r/yoshuawuyts/customs?branch=master)
+[![Coverage Status](https://coveralls.io/repos/yoshuawuyts/customs/badge.png?branch=master)](https://coveralls.io/r/yoshuawuyts/customs?branch=master)
 
 Type validator for node.js and the browser.
 
