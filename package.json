@@ -4,7 +4,8 @@
   "description": "Type validator",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,8 @@
   "homepage": "https://github.com/yoshuawuyts/customs",
   "devDependencies": {
     "should": "^3.3.0",
-    "mocha": "^1.18.2"
+    "mocha": "^1.18.2",
+    "istanbul": "^0.2.9",
+    "coveralls": "^2.10.0"
   }
 }
