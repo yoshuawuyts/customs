@@ -28,7 +28,6 @@ function customs (type, target, err) {
         return true;
       }
       return false;
-      break;
 
     case 'string':
       if ('string' == typeof(target)) {
@@ -36,7 +35,6 @@ function customs (type, target, err) {
         return true;
       }
       return false;
-      break;
 
     case 'number':
       if ('number' == typeof(target)) {
@@ -44,7 +42,6 @@ function customs (type, target, err) {
         return true
       };
       return false;
-      break;
 
     case 'boolean':
       if ('boolean' == typeof(target)) {
@@ -52,7 +49,6 @@ function customs (type, target, err) {
         return true;
       }
       return false;
-      break;
 
     case 'object':
       if ('object' == typeof(target)) {
@@ -60,7 +56,6 @@ function customs (type, target, err) {
         return true;
       }
       return false;
-      break;
 
     case 'email':
       var regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
