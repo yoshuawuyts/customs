@@ -61,9 +61,6 @@ describe('#customs()', function () {
 
     it('should return false if an unknown type is provided', function (done) {
       customs('sms', 'howdoyoudo').should.equal(false);
-      customs('sms', 'howdoyoudo', function(err) {
-        err.should.equal(true);
-      });
       done();
     });
   });
