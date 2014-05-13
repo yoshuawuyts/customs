@@ -19,10 +19,10 @@ var customs = require('customs');
 customs('string', 'Dad jokes');
 // -> 'true'
 
-var returnValue = customs('string', 1337);
+customs('string', 1337);
 // -> 'false'
 
-var customs(/d(b+)d/g, 'cdbbdbsbz');
+customs(/d(b+)d/g, 'cdbbdbsbz');
 // -> 'true'
 ````
 
