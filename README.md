@@ -14,15 +14,15 @@ npm i --save customs
 
 ## Usage
 ````js
-var customs = require('customs');
+var validate = require('customs');
 
-customs('string', 'Dad jokes');
+validate('string', 'Dad jokes');
 // -> 'true'
 
-customs('string', 1337);
+validate('string', 1337);
 // -> 'false'
 
-customs(/d(b+)d/g, 'cdbbdbsbz');
+validate(/d(b+)d/g, 'cdbbdbsbz');
 // -> 'true'
 ````
 
