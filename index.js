@@ -23,7 +23,7 @@ function customs (type, target) {
   switch (type) {
 
     case 'array':
-      if (Object.prototype.toString.call(target) == '[object Array]'){
+      if ('[object Array]' == Object.prototype.toString.call(target)){
         return true;
       }
       return false;
