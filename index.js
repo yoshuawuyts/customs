@@ -9,9 +9,9 @@ module.exports = exports = customs;
 /**
  * Init 'customs'
  *
- *  customs('string', 'hi', function(err) {
- *    // handle error if any
- *  });
+ *  var validate = require('customs');
+ *  validate('string', 'hi');
+ *  // -> 'true'
  *
  * @params {String} type
  * @params {any} target
