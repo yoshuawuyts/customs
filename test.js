@@ -47,6 +47,8 @@ describe('#customs()', function () {
   describe('case: email', function () {
     it('should return true if an email is provided', function (done) {
       customs('email', 'hi@yoshuawuyts.com').should.equal(true);
+      customs('email', 'hi@yoshuawuyts.com').should.equal(true);
+      customs('email', '!#$%&*+-/\'=?^_`{|}~@yoshuawuyts.com').should.equal(true);
       customs('email', 'bla@xyz').should.equal(false);
       done();
     });
