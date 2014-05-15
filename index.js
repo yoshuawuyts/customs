@@ -14,8 +14,8 @@ module.exports = exports = customs;
  *  // -> 'true'
  *
  * @params {String} type
- * @params {any} target
- * @return {bool}
+ * @params {Any} target
+ * @return {Boolean}
  * @api public
  */
 
