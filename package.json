@@ -1,6 +1,6 @@
 {
   "name": "customs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Type validator for node.js and the browser through browserify",
   "main": "index.js",
   "scripts": {
