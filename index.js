@@ -57,6 +57,12 @@ function customs (type, target) {
       if (regex.test(target)) {
         return true;
       }
+      return false;
+
+    case 'function':
+      console.log(typeof target)
+      if('function' == typeof target) return true;
+      return false;
 
     default:
       // check and evaluate regex

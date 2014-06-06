@@ -54,6 +54,14 @@ describe('#customs()', function () {
     });
   });
 
+  describe('case: function', function () {
+    it('should return true if a function is provided', function (done) {
+      customs('function', function(arg) {return arg}).should.equal(true);
+      customs('function', '123').should.equal(false);
+      done();
+    });
+  });
+
   describe('case: default', function () {
     it('should return true if a regex is validated', function (done) {
       customs(/d(b+)d/g, 'cdbbdbsbz').should.equal(true);
